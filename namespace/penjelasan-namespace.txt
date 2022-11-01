@@ -1,0 +1,19 @@
+Sebuah cara untuk mengelompokan program ke dalam sebuah package tersendiri
+
+Teknik ini disebut juga Encapsulaption 
+
+Mengapa memakai ini? karena PHP tidak mengijinkan kita untuk memiliki 2class dengan nama yang sama
+
+Contoh :
+
+<?php namespace App\Produk; // App ini biasanya disebutnya vendor atau siapa yg bikinnya
+
+class User {
+    public function __construct()
+    {
+        echo "Ini adalah class " . __CLASS__;
+    }
+}
+
+Usulan Ansuran menggunakan namespace :
+* namespace Vendor\Namespace\SubNamespace;
